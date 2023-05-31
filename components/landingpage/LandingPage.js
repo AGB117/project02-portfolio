@@ -3,7 +3,11 @@ import classes from "./LandingPage.module.css";
 function LandingPage(props) {
   return (
     <div className={classes.landing}>
-      <p>Hello world</p>
+      <p>Georgia default</p>
+
+      <p style={{ fontFamily: "Space Mono, monospace" }}>
+        "Space Mono, monospace"
+      </p>
     </div>
   );
 }
