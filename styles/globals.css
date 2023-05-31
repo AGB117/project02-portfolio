@@ -12,11 +12,12 @@ html {
 }
 
 body {
-  font-family: Georgia, serif;
-  /* font-family: "Space Mono", monospace; */
   line-height: 1;
   font-weight: 400;
-  color: #555;
-  overflow-x: hidden;
+  font-family: Georgia, serif;
   background-image: url(/background2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/* font-family: "Space Mono", monospace; */
