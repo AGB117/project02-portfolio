@@ -1,9 +1,10 @@
 import classes from "./Layout.module.css";
+import MainNav from "./MainNav";
 
 function Layout(props) {
   return (
     <div className={classes.layout}>
-      {/* <MainNav/> here goes the main nav top bar component*/}
+      <MainNav />
       <main>{props.children}</main>
       {/* <Footer/> here goes the footer component of the layout*/}
     </div>

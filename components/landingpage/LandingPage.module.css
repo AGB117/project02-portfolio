@@ -1,3 +1,27 @@
-.landing {
-  font-size: 30px;
+.landingContainer {
+}
+
+.about {
+}
+
+.aboutTitle h3 {
+  font-size: 10rem;
+  margin: 10rem 2rem 5rem 1rem;
+}
+
+.aboutText {
+  line-height: 1.2;
+  width: 100rem;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+/*///////////////////////////
+////////////Media//////////
+///////////////////////////*/
+
+@media (max-width: 1000px) {
+  .aboutText {
+    width: auto;
+  }
 }

@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <Fragment>
       <Head>
-        <title>New App</title>
+        <title>Portfolio | Abner Gonzalez</title>
         <meta name="description" content="new website project" />
         <link rel="icon" type="image/x-icon" href="/favicon.webp" />
       </Head>
