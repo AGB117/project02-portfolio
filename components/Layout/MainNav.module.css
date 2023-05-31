@@ -37,6 +37,10 @@
 }
 
 @media (max-width: 1000px) {
+  .nameTop {
+    align-content: flex-start;
+  }
+
   .navLinks ul {
     flex-direction: column;
   }
