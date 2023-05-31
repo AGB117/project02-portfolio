@@ -24,11 +24,24 @@
 }
 
 .navLinks li {
-  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.navLinks li a {
+  text-decoration: none;
 }
 
 .navLinks a:hover,
 .navLinks a:active {
   cursor: pointer;
   color: orange;
+}
+
+@media (max-width: 1000px) {
+  .navLinks ul {
+    flex-direction: column;
+  }
+
+  .navLinks li {
+    margin: 0.8rem 0rem;
+  }
 }

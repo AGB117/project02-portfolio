@@ -9,10 +9,14 @@ function MainNav() {
         <div className={classes.navLinks}>
           <ul>
             <li>
-              <a src="about">About</a>
+              <a href="#about">About</a>
             </li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
