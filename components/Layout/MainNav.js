@@ -5,7 +5,11 @@ function MainNav() {
   return (
     <Fragment>
       <div className={classes.topBar}>
-        <div className={classes.nameTop}> Abner Gonzalez</div>
+        <div className={classes.nameTop}>
+          <div>Abner </div>
+
+          <div>Gonzalez</div>
+        </div>
         <div className={classes.navLinks}>
           <ul>
             <li>

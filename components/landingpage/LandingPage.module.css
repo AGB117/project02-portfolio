@@ -1,4 +1,5 @@
 .landingContainer {
+  margin: "";
 }
 
 .landingContainer p {
@@ -26,7 +27,7 @@
 }
 
 /*///////////////////////////
-////////////About//////////
+////////////Work//////////
 ///////////////////////////*/
 
 .work {
@@ -38,8 +39,51 @@
   margin-bottom: 5rem;
 }
 
+.workImg {
+  height: 30rem;
+  width: 35rem;
+  object-fit: contain;
+}
+
+.workImg img {
+  border-radius: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.cardContainer {
+  display: flex;
+}
+.cardContainer a {
+  color: orange;
+  text-decoration: none;
+}
+
+.linksContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.linksContainer img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.linksContainer a {
+  margin-top: 1rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.linksContainer a:hover,
+.linksContainer a:active {
+  cursor: pointer;
+}
+
 /*///////////////////////////
-////////////About//////////
+////////////Contact//////////
 ///////////////////////////*/
 
 .contact {
@@ -61,6 +105,6 @@
   }
 
   .aboutTitle h3 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }

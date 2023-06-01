@@ -1,4 +1,6 @@
 import classes from "./LandingPage.module.css";
+import Card from "../ui/Card";
+import Link from "next/link";
 
 function LandingPage(props) {
   return (
@@ -7,7 +9,7 @@ function LandingPage(props) {
         <div className={classes.aboutTitle}>
           <h3>
             Web
-            <div>Designer</div>
+            <div>Developer</div>
           </h3>
           <div className={classes.aboutText}>
             <p>
@@ -26,10 +28,33 @@ function LandingPage(props) {
 
       <section id="work" className={classes.work}>
         <h2>Work</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore
-        </p>
+        <div className={classes.cardContainer}>
+          <Card>
+            <div className={classes.workImg}>
+              <img src="project01.webp" />
+            </div>
+            <div className={classes.linksContainer}>
+              <div>
+                <a href="https://project01-restaurant.vercel.app/">
+                  <img src="/Vercel-modified.webp" />
+                </a>
+                <div>
+                  <a href="https://project01-restaurant.vercel.app/">Vercel</a>
+                </div>
+              </div>
+              <div>
+                <Link href="https://github.com/AGB117/project01-restaurant">
+                  <img src="/githubcircle-modified.webp" />
+                </Link>
+                <div>
+                  <a href="https://github.com/AGB117/project01-restaurant">
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
       </section>
 
       <section id="contact" className={classes.contact}>

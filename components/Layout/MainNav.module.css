@@ -11,6 +11,10 @@
   align-content: center;
 }
 
+.nameTop :not(:first-child) {
+  margin-left: 1rem;
+}
+
 .navLinks {
   font-size: 3rem;
   display: flex;
@@ -47,5 +51,14 @@
 
   .navLinks li {
     margin: 0.8rem 0rem;
+  }
+
+  .nameTop {
+    flex-direction: column;
+  }
+
+  .nameTop :not(:first-child) {
+    margin-left: 0rem;
+    margin-top: 1rem;
   }
 }
