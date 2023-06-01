@@ -33,6 +33,7 @@ function LandingPage(props) {
             <div className={classes.workImg}>
               <img src="project01.webp" />
             </div>
+            <div className={classes.projectName}>Restaurant Project</div>
             <div className={classes.linksContainer}>
               <div>
                 <a href="https://project01-restaurant.vercel.app/">
