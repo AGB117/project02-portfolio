@@ -18,6 +18,7 @@ body {
   background-image: url(/background.webp);
   background-size: cover;
   background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 a {

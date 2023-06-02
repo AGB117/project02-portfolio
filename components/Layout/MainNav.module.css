@@ -40,6 +40,13 @@
   color: orange;
 }
 
+.navButton {
+  z-index: 101;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @media (max-width: 1000px) {
   .nameTop {
     align-content: flex-start;

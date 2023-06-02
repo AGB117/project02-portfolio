@@ -1,5 +1,10 @@
 .landingContainer {
   margin: "";
+
+  /*this moves the whole container*/
+  width: 150rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .landingContainer p {
@@ -171,13 +176,11 @@
 
 .contactLinks {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .contactLinks ul {
   display: flex;
-  margin-top: 2rem;
-  margin-left: 2.4rem;
   font-size: 2.6rem;
   list-style-type: disc;
   column-gap: 10rem;
@@ -191,10 +194,20 @@
   list-style: none;
 }
 
+.contactLinks a:hover,
+.contactLinks a:active {
+  cursor: pointer;
+  color: orange;
+}
+
 /*///////////////////////////
 ////////////Media//////////
 ///////////////////////////*/
-
+@media (max-width: 1500px) {
+  .landingContainer {
+    width: auto;
+  }
+}
 @media (max-width: 1200px) {
   .cardContainer {
     display: grid;
