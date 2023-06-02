@@ -3,7 +3,18 @@
 }
 
 .landingContainer p {
+  line-height: 1.2;
+  font-size: 3rem;
+}
+
+.landingContainer h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.landingContainer h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 /*///////////////////////////
@@ -11,19 +22,78 @@
 ///////////////////////////*/
 
 .about {
-  margin: 10rem 1rem 0rem 1rem;
+  margin: 10rem 1rem;
 }
 
-.aboutTitle h3 {
-  font-size: 10rem;
-  margin-bottom: 5rem;
+/*///////////////////////////
+////////////Education//////////
+///////////////////////////*/
+
+.education {
+  margin: 10rem 1rem;
 }
 
-.aboutText {
-  line-height: 1.2;
-  width: 100rem;
+.education ul {
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+  font-size: 2.6rem;
+  list-style-type: disc;
+}
+
+.education li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.eduDateLocContainer {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-size: 3rem;
-  margin-left: 1rem;
+
+  justify-content: space-between;
+}
+
+.eduDate {
+  display: flex;
+}
+
+.eduLoc {
+  display: flex;
+}
+
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.iconContainerMap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+/*///////////////////////////
+////////////Skills//////////
+///////////////////////////*/
+
+.skills {
+  margin: 10rem 1rem;
+}
+
+.skills ul {
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+  font-size: 2.6rem;
+  list-style-type: disc;
+}
+
+.skills li:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 /*///////////////////////////
@@ -31,12 +101,7 @@
 ///////////////////////////*/
 
 .work {
-  margin: 10rem 1rem 0rem 1rem;
-}
-
-.work h2 {
-  font-size: 5rem;
-  margin-bottom: 5rem;
+  margin: 10rem 1rem;
 }
 
 .workImg {
@@ -55,12 +120,20 @@
   font-size: 3rem;
   display: flex;
   justify-content: center;
-  margin: 1rem 0rem 0rem 0rem;
+  margin-top: 1rem;
 }
 
 .cardContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1rem;
 }
+
+.cardFlexCenter {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .cardContainer a {
   color: orange;
   text-decoration: none;
@@ -93,24 +166,64 @@
 ///////////////////////////*/
 
 .contact {
-  margin: 10rem 1rem 0rem 1rem;
+  margin: 10rem 1rem;
 }
 
-.contact h2 {
-  font-size: 5rem;
-  margin-bottom: 5rem;
+.contactLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.contactLinks ul {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+  font-size: 2.6rem;
+  list-style-type: disc;
+  column-gap: 10rem;
+}
+
+.contactLinks li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.contactLinks li {
+  list-style: none;
 }
 
 /*///////////////////////////
 ////////////Media//////////
 ///////////////////////////*/
 
-@media (max-width: 1000px) {
-  .aboutText {
-    width: auto;
+@media (max-width: 1200px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
   }
 
-  .aboutTitle h3 {
-    font-size: 6rem;
+  .cardFlexCenter {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .eduDateLocContainer {
+    flex-direction: column;
+  }
+
+  .eduDate {
+    margin-left: 0rem;
+    margin-right: auto;
+  }
+
+  .eduLoc {
+    margin-left: 0rem;
+    margin-right: auto;
+  }
+
+  .contactLinks ul {
+    flex-direction: column;
+    row-gap: 2rem;
   }
 }

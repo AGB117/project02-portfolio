@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: #333;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -15,9 +15,11 @@ body {
   line-height: 1;
   font-weight: 400;
   font-family: Georgia, serif;
-  background-image: url(/space.webp);
+  background-image: url(/background.webp);
   background-size: cover;
   background-repeat: repeat;
 }
 
-/* font-family: "Space Mono", monospace; */
+a {
+  text-decoration: none;
+}
