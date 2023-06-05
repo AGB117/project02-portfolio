@@ -14,11 +14,23 @@ body {
   line-height: 1;
   font-weight: 400;
   font-family: Georgia, serif;
-  background-image: url(/background.webp);
+  overflow-x: hidden;
+
+  /*image style*/
+  /* background-image: url(/background.webp);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow-x: hidden;
+  background-attachment: fixed; */
+
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1000000;
 }
 
 a {
