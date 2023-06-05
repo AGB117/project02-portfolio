@@ -15,23 +15,9 @@ body {
   font-weight: 400;
   font-family: Georgia, serif;
   overflow-x: hidden;
-
-  /*image style*/
   background-image: url(/background.webp);
   background-position: center;
   background-size: cover;
-
-  /*
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1000000; 
-  */
 }
 
 a {

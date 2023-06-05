@@ -33,9 +33,6 @@ function MainNav(props) {
     setModalOpen(!modalOpen);
   };
 
-  ////////////////////////////
-  ////////Space theme/////////
-  ///////////////////////////
   const [spaceTheme, setSpaceTheme] = useState(false);
   const [spaceThemeModal, setSpaceThemeModal] = useState(null);
   useEffect(() => {
@@ -54,7 +51,6 @@ function MainNav(props) {
     setSpaceTheme(!spaceTheme);
   };
   useEffect(() => {
-    //mobile
     if (spaceTheme && mobileNav) {
       document.body.style.fontFamily = "Space Mono, monospace";
       document.body.style.backgroundImage = "url('space.webp')";
@@ -71,7 +67,6 @@ function MainNav(props) {
       document.body.style.backgroundAttachment = "";
     }
 
-    //desktop
     if (spaceTheme && !mobileNav) {
       document.body.style.fontFamily = "Space Mono, monospace";
       document.body.style.backgroundImage = "url('backgrounddesktop.webp')";
@@ -88,10 +83,6 @@ function MainNav(props) {
     console.log(spaceTheme);
     console.log(mobileNav);
   }, [spaceTheme, mobileNav]);
-
-  ////////////////////////////
-  ////////Space theme/////////
-  ///////////////////////////
 
   return (
     <Fragment>

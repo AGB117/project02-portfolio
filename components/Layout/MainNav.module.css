@@ -73,10 +73,6 @@
   transform: translate(-1rem, -1rem);
 }
 
-/*///////////////////////////////
-////////////MEDIA///////////////
-///////////////////////////////*/
-
 @media (max-width: 1209px) {
   .nameTop {
     align-content: flex-start;

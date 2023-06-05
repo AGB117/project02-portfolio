@@ -6,7 +6,6 @@ function Layout(props) {
     <div className={classes.layout}>
       <MainNav />
       <main>{props.children}</main>
-      {/* <Footer/> here goes the footer component of the layout*/}
     </div>
   );
 }

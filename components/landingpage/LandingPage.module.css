@@ -1,7 +1,5 @@
 .landingContainer {
-  margin: "";
-
-  /*this moves the whole container*/
+  margin: 0rem;
   width: 150rem;
   margin-left: auto;
   margin-right: auto;
@@ -22,25 +20,13 @@
   margin-bottom: 1rem;
 }
 
-/*///////////////////////////
-////////////About//////////
-///////////////////////////*/
-
 .about {
   margin: 10rem 1rem;
 }
 
-/*/ //////////////////////////
-////////////Experience//////////
-///////////////////////////*/
-
 .education {
   margin: 10rem 1rem;
 }
-
-/*///////////////////////////
-////////////Experience//////////
-///////////////////////////*/
 
 .experience {
   margin: 10rem 1rem;
@@ -93,10 +79,6 @@
   margin-left: auto;
 }
 
-/*/ //////////////////////////
-////////////Skills//////////
-///////////////////////////*/
-
 .skills {
   margin: 10rem 1rem;
 }
@@ -111,10 +93,6 @@
 .skills li:not(:last-child) {
   margin-bottom: 2rem;
 }
-
-/*///////////////////////////
-////////////Work//////////
-///////////////////////////*/
 
 .work {
   margin: 10rem 1rem;
@@ -177,17 +155,12 @@
   cursor: pointer;
 }
 
-/*/ //////////////////////////
-////////////Contact//////////
-///////////////////////////*/
-
 .contact {
   margin: 10rem 1rem;
 }
 
 .contactLinks {
   display: flex;
-  /* justify-content: center; */
 }
 
 .contactLinks ul {
@@ -211,9 +184,6 @@
   color: orange;
 }
 
-/*/ //////////////////////////
-////////////Media//////////
-///////////////////////////*/
 @media (max-width: 1500px) {
   .landingContainer {
     width: auto;

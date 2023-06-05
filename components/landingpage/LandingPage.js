@@ -2,7 +2,6 @@ import classes from "./LandingPage.module.css";
 import Card from "../ui/Card";
 import Link from "next/link";
 import { CalendarBlank, MapPin } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
 
 function LandingPage(props) {
   return (
@@ -134,68 +133,6 @@ function LandingPage(props) {
               </div>
             </Card>
           </div>
-
-          {/* <div className={classes.cardFlexCenter}>
-            <Card>
-              <div className={classes.workImg}>
-                <img src="project01.webp" />
-              </div>
-              <div className={classes.projectName}>Restaurant Project</div>
-              <div className={classes.linksContainer}>
-                <div>
-                  <a href="https://project01-restaurant.vercel.app/">
-                    <img src="/Vercel-modified.webp" />
-                  </a>
-                  <div>
-                    <a href="https://project01-restaurant.vercel.app/">
-                      Vercel
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <Link href="https://github.com/AGB117/project01-restaurant">
-                    <img src="/githubcircle-modified.webp" />
-                  </Link>
-                  <div>
-                    <a href="https://github.com/AGB117/project01-restaurant">
-                      Github
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
-
-          <div className={classes.cardFlexCenter}>
-            <Card>
-              <div className={classes.workImg}>
-                <img src="project01.webp" />
-              </div>
-              <div className={classes.projectName}>Restaurant Project</div>
-              <div className={classes.linksContainer}>
-                <div>
-                  <a href="https://project01-restaurant.vercel.app/">
-                    <img src="/Vercel-modified.webp" />
-                  </a>
-                  <div>
-                    <a href="https://project01-restaurant.vercel.app/">
-                      Vercel
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <Link href="https://github.com/AGB117/project01-restaurant">
-                    <img src="/githubcircle-modified.webp" />
-                  </Link>
-                  <div>
-                    <a href="https://github.com/AGB117/project01-restaurant">
-                      Github
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div> */}
         </div>
       </section>
 
