@@ -8,7 +8,12 @@ function NavModal({ closeOpenNav, colorModal }) {
   }, [colorModal]);
   return (
     <Fragment>
-      <div style={{ color: `${colorModal}` }} className={classes.modal}>
+      <div
+        style={{
+          color: `${colorModal.color}`,
+        }}
+        className={classes.modal}
+      >
         <div className={classes.navLinks}>
           <ul>
             <li>
@@ -44,7 +49,12 @@ function NavModal({ closeOpenNav, colorModal }) {
           </ul>
         </div>
       </div>
-      <div className={classes.backdrop}></div>
+      <div
+        style={{
+          background: `${colorModal.background}`,
+        }}
+        className={classes.backdrop}
+      ></div>
     </Fragment>
   );
 }

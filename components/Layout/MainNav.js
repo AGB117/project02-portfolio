@@ -17,8 +17,8 @@ function MainNav(props) {
   }, []);
 
   useEffect(() => {
-    windowWidth.width <= 1000 ? setMobileNav(true) : null;
-    windowWidth.width >= 1000 ? setMobileNav(false) : null;
+    windowWidth.width < 1211 ? setMobileNav(true) : null;
+    windowWidth.width > 1212 ? setMobileNav(false) : null;
   }, [windowWidth.width]);
 
   useEffect(() => {
@@ -39,25 +39,44 @@ function MainNav(props) {
   const [spaceTheme, setSpaceTheme] = useState(false);
   const [spaceThemeModal, setSpaceThemeModal] = useState(null);
   useEffect(() => {
-    spaceTheme ? setSpaceThemeModal("#fff") : setSpaceThemeModal("#333");
-    //send an object here with color and background color for the backdrop and done
+    spaceTheme
+      ? setSpaceThemeModal({
+          color: "#fff",
+          background: "hsla(283, 100%, 6%, 0.96)",
+        })
+      : setSpaceThemeModal({
+          color: "#333",
+          background: " hsla(0, 9%, 94%, 0.96)",
+        });
   }, [spaceTheme]);
 
   const themeHandler = () => {
     setSpaceTheme(!spaceTheme);
   };
   useEffect(() => {
-    if (spaceTheme === true) {
+    if (spaceTheme && mobileNav) {
       document.body.style.fontFamily = "Space Mono, monospace";
       document.body.style.backgroundImage = "url('space.webp')";
       document.body.style.color = "#fff";
-    } else {
+    } else if (!spaceTheme && mobileNav) {
       document.body.style.fontFamily = "Georgia, serif";
       document.body.style.backgroundImage = "url('background.webp')";
       document.body.style.color = "#333";
     }
     console.log(spaceTheme);
-  }, [spaceTheme]);
+    //diffrenciate these for mobile vs desktop for the backgroundimages
+    if (spaceTheme && !mobileNav) {
+      document.body.style.fontFamily = "Space Mono, monospace";
+      document.body.style.backgroundImage = "url('backgrounddesktop.webp')";
+      document.body.style.color = "#fff";
+    } else if (!spaceTheme && !mobileNav) {
+      document.body.style.fontFamily = "Georgia, serif";
+      document.body.style.backgroundImage = "url('background.webp')";
+      document.body.style.color = "#333";
+    }
+    console.log(spaceTheme);
+    console.log(mobileNav);
+  }, [spaceTheme, mobileNav]);
 
   ////////////////////////////
   ////////Space theme/////////
@@ -68,15 +87,12 @@ function MainNav(props) {
       <nav className={classes.topBar}>
         <div className={classes.nameTop}>
           <div>Abner </div>
-
           <div>Gonzalez</div>
-          <section>
-            <div>
-              <button className={classes.themeChange} onClick={themeHandler}>
-                Change to space theme
-              </button>
-            </div>
-          </section>
+          <div>
+            <button className={classes.themeChange} onClick={themeHandler}>
+              Change to space theme
+            </button>
+          </div>
         </div>
 
         {mobileNav && modalOpen && (
@@ -121,12 +137,16 @@ function MainNav(props) {
         )}
         {mobileNav && !modalOpen && (
           <button className={classes.navButton} onClick={navHandler}>
-            <DotsThreeOutlineVertical size={40} color="#333" weight="fill" />
+            <DotsThreeOutlineVertical
+              size={40}
+              color={spaceThemeModal.color}
+              weight="fill"
+            />
           </button>
         )}
         {mobileNav && modalOpen && (
           <button className={classes.navButton} onClick={navHandler}>
-            <X size={40} color="#333" />
+            <X size={40} color={spaceThemeModal.color} weight="bold" />
           </button>
         )}
       </nav>
