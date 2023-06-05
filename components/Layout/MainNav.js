@@ -59,13 +59,13 @@ function MainNav(props) {
       document.body.style.backgroundImage = "url('space.webp')";
       document.body.style.color = "#fff";
       document.body.style.backgroundRepeat = "repeat";
-      document.body.style.backgroundAttachment = "fixed";
+      // document.body.style.backgroundAttachment = "fixed";
     } else if (!spaceTheme && mobileNav) {
       document.body.style.fontFamily = "Georgia, serif";
       document.body.style.backgroundImage = "url('background.webp')";
       document.body.style.color = "#333";
       document.body.style.backgroundRepeat = "repeat";
-      document.body.style.backgroundAttachment = "fixed";
+      // document.body.style.backgroundAttachment = "fixed";
     }
     console.log(spaceTheme);
     //diffrenciate these for mobile vs desktop for the backgroundimages
@@ -74,13 +74,13 @@ function MainNav(props) {
       document.body.style.backgroundImage = "url('backgrounddesktop.webp')";
       document.body.style.color = "#fff";
       document.body.style.backgroundRepeat = "repeat";
-      document.body.style.backgroundAttachment = "fixed";
+      // document.body.style.backgroundAttachment = "fixed";
     } else if (!spaceTheme && !mobileNav) {
       document.body.style.fontFamily = "Georgia, serif";
       document.body.style.backgroundImage = "url('background.webp')";
       document.body.style.color = "#333";
       document.body.style.backgroundRepeat = "repeat";
-      document.body.style.backgroundAttachment = "fixed";
+      // document.body.style.backgroundAttachment = "fixed";
     }
     console.log(spaceTheme);
     console.log(mobileNav);
