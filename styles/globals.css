@@ -21,14 +21,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
-  /* background-size: 100vw 100vh; 
+  /*
+  background-size: 100vw 100vh;
   background-attachment: fixed; 
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1000000; */
+  z-index: -1000000; 
+  */
 }
 
 a {
