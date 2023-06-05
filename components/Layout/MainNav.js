@@ -61,12 +61,14 @@ function MainNav(props) {
       document.body.style.color = "#fff";
       document.body.style.backgroundSize = "cover";
       document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundAttachment = "";
     } else if (!spaceTheme && mobileNav) {
       document.body.style.fontFamily = "Georgia, serif";
       document.body.style.backgroundImage = "url('background.webp')";
       document.body.style.color = "#333";
       document.body.style.backgroundSize = "cover";
       document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundAttachment = "";
     }
     console.log(spaceTheme);
     //desktop
