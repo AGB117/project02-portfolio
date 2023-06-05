@@ -60,11 +60,13 @@ function MainNav(props) {
       document.body.style.backgroundImage = "url('space.webp')";
       document.body.style.color = "#fff";
       document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundRepeat = "repeat";
     } else if (!spaceTheme && mobileNav) {
       document.body.style.fontFamily = "Georgia, serif";
       document.body.style.backgroundImage = "url('background.webp')";
       document.body.style.color = "#333";
       document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundRepeat = "repeat";
     }
     console.log(spaceTheme);
     //desktop
