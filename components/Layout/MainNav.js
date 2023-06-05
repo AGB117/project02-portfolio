@@ -59,7 +59,7 @@ function MainNav(props) {
       document.body.style.fontFamily = "Space Mono, monospace";
       document.body.style.backgroundImage = "url('space.webp')";
       document.body.style.color = "#fff";
-      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundSize = "auto 615rem";
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundAttachment = "";
     } else if (!spaceTheme && mobileNav) {
@@ -70,18 +70,20 @@ function MainNav(props) {
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundAttachment = "";
     }
-    console.log(spaceTheme);
+
     //desktop
     if (spaceTheme && !mobileNav) {
       document.body.style.fontFamily = "Space Mono, monospace";
       document.body.style.backgroundImage = "url('backgrounddesktop.webp')";
       document.body.style.color = "#fff";
       document.body.style.backgroundAttachment = "fixed";
+      document.body.style.backgroundSize = "cover";
     } else if (!spaceTheme && !mobileNav) {
       document.body.style.fontFamily = "Georgia, serif";
       document.body.style.backgroundImage = "url('background.webp')";
       document.body.style.color = "#333";
       document.body.style.backgroundAttachment = "fixed";
+      document.body.style.backgroundSize = "cover";
     }
     console.log(spaceTheme);
     console.log(mobileNav);
@@ -99,7 +101,7 @@ function MainNav(props) {
           <div>Gonzalez</div>
           <div>
             <button className={classes.themeChange} onClick={themeHandler}>
-              Change to space theme
+              Toggle to space theme
             </button>
           </div>
         </div>

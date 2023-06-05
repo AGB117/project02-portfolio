@@ -11,6 +11,18 @@
   align-content: center;
 }
 
+.nameTop button {
+  font-weight: 600;
+  color: #333;
+}
+
+.nameTop button:hover,
+.nameTop button:active {
+  background-color: blueviolet;
+  cursor: pointer;
+  color: orange;
+}
+
 .nameTop :not(:first-child) {
   margin-left: 1rem;
 }
