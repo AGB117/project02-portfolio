@@ -41,11 +41,18 @@
 }
 
 .navButton {
+  background-color: transparent;
   z-index: 101;
   position: absolute;
   top: 0;
   right: 0;
+  margin: 1rem 1rem 0rem 0rem;
+  border: none;
 }
+
+/*///////////////////////////////
+////////////MEDIA///////////////
+///////////////////////////////*/
 
 @media (max-width: 1000px) {
   .nameTop {

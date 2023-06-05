@@ -1,8 +1,9 @@
 import classes from "./MainNav.module.css";
 import { Fragment, useEffect, useState } from "react";
 import NavModal from "../ui/NavModal";
+import { DotsThreeOutlineVertical, X } from "@phosphor-icons/react";
 
-function MainNav() {
+function MainNav(props) {
   const [mobileNav, setMobileNav] = useState();
   const [windowWidth, setWindowWidth] = useState({ width: null });
   const [modalOpen, setModalOpen] = useState(false);
@@ -21,19 +22,20 @@ function MainNav() {
   }, [windowWidth.width]);
 
   useEffect(() => {
-    if (mobileNav === true) {
-      document.body.style.overflow = "hidden";
+    if (modalOpen === true) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
     }
-
-    if (mobileNav === false) {
-      document.body.style.overflow = "scroll";
-    }
-  }, [mobileNav]);
+  }, [modalOpen]);
 
   const navHandler = () => {
+    console.log(modalOpen);
     setModalOpen(!modalOpen);
+    console.log(modalOpen);
   };
 
+  console.log(modalOpen);
   return (
     <Fragment>
       <nav className={classes.topBar}>
@@ -43,7 +45,7 @@ function MainNav() {
           <div>Gonzalez</div>
         </div>
 
-        {mobileNav && modalOpen && <NavModal />}
+        {mobileNav && modalOpen && <NavModal closeOpenNav={navHandler} />}
 
         {!mobileNav && (
           <div className={classes.navLinks}>
@@ -56,6 +58,11 @@ function MainNav() {
               <li>
                 <a onClick={navHandler} href="#education">
                   Education
+                </a>
+              </li>
+              <li>
+                <a onClick={navHandler} href="#experience">
+                  Experience
                 </a>
               </li>
               <li>
@@ -76,9 +83,16 @@ function MainNav() {
             </ul>
           </div>
         )}
-        <button className={classes.navButton} onClick={navHandler}>
-          click here for nav
-        </button>
+        {mobileNav && !modalOpen && (
+          <button className={classes.navButton} onClick={navHandler}>
+            <DotsThreeOutlineVertical size={40} color="#333" weight="fill" />
+          </button>
+        )}
+        {mobileNav && modalOpen && (
+          <button className={classes.navButton} onClick={navHandler}>
+            <X size={40} color="#333" />
+          </button>
+        )}
       </nav>
     </Fragment>
   );

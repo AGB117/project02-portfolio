@@ -31,25 +31,36 @@
 }
 
 /*///////////////////////////
-////////////Education//////////
+////////////Experience//////////
 ///////////////////////////*/
 
 .education {
   margin: 10rem 1rem;
 }
 
-.education ul {
+/*///////////////////////////
+////////////Experience//////////
+///////////////////////////*/
+
+.experience {
+  margin: 10rem 1rem;
+}
+
+.experience ul {
   margin-top: 2rem;
   margin-left: 2.4rem;
   font-size: 2.6rem;
   list-style-type: disc;
 }
 
-.education li:not(:last-child) {
+.experience li:not(:last-child) {
   margin-bottom: 2rem;
 }
+.experience li {
+  line-height: 1.4;
+}
 
-.eduDateLocContainer {
+.expDateLocContainer {
   margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -59,11 +70,11 @@
   justify-content: space-between;
 }
 
-.eduDate {
+.expDate {
   display: flex;
 }
 
-.eduLoc {
+.expLoc {
   display: flex;
 }
 

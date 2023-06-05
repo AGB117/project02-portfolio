@@ -11,31 +11,35 @@ function LandingPage(props) {
           Web
           <div>Developer</div>
         </h2>
-
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non …Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim
+          A highly motivated chemical engineer with a passion for technology and
+          computers, seeking to transition into a web development career. My
+          skills include HTML, CSS, JavaScript. My favorite way of using these
+          technologies is through the REACT.js library and the Next.js framework
+          to design websites from the ground up. Combining my technical skills,
+          analytical mindset, and problem-solving abilities, I am eager to
+          contribute my expertise to a dynamic web development team.
         </p>
       </section>
 
       <section id="education" className={classes.education}>
         <h2>Education</h2>
+        <h1>Bachelor of Science in Chemical Engineering</h1>
+        <p>Mayaguez, PR 2014</p>
+      </section>
+
+      <section id="experience" className={classes.experience}>
+        <h2>Experience</h2>
         <h1>Research assistant</h1>
         <p>Florida Polytechnic University</p>
-        <div className={classes.eduDateLocContainer}>
-          <div className={classes.eduDate}>
+        <div className={classes.expDateLocContainer}>
+          <div className={classes.expDate}>
             <div className={classes.iconContainer}>
               <CalendarBlank size={32} />
             </div>
             <div>Feb 2014 - Present</div>
           </div>
-          <div className={classes.eduLoc}>
+          <div className={classes.expLoc}>
             <div className={classes.iconContainerMap}>
               <MapPin size={32} />
             </div>
@@ -44,19 +48,39 @@ function LandingPage(props) {
         </div>
         <div>
           <ul>
-            <li>worked</li>
-            <li>Hello</li>
             <li>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non …Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              Analyze a variety of samples using analytical lab instruments.
             </li>
+
+            <li>
+              Design, set up and conduct tests for various lab scale research
+              projects.
+            </li>
+            <li> Help implement lab scale projects to industry scale. </li>
+            <li>
+              Operation of mineral processing equipment (jaw crusher, Bico-Braun
+              ball or rod mill, wet & dry sieve screening) to prepare materials
+              for accurate analysis in the wet chemistry lab.
+            </li>
+            <li> Perform phosphate flotation for reagent testing purposes. </li>
+            <li>
+              Operation and troubleshooting of analytical laboratory equipment
+              including Flow Injection Analysis (Ion Chromatography), ICP-OES
+              (optical emission spectrometry) to obtain quantitative properties
+              of various materials (solid and liquid) and Particle Size Analyzer
+              for dry and slurry samples. Mostly for REE (rare earths) and
+              phosphate concentrations.
+            </li>
+            <li>
+              Perform testing of samples using a variety of analytical chemistry
+              techniques (titration, pH adjustments, fluoride concentration in
+              soil, silica concentration, citrate insoluble etc.)
+            </li>
+            <li>
+              Author various laboratory SOPs (sample preparation, standard
+              formulation etc.)
+            </li>
+            <li>Train personnel in a variety of lab SOPs. </li>
           </ul>
         </div>
       </section>
@@ -65,14 +89,13 @@ function LandingPage(props) {
         <h2>Skills</h2>
         <div>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-            <li>React JS</li>
-            <li>Next JS</li>
-            <li>Vercel</li>
-            <li>MongoDB</li>
+            <li>Programming Languages: HTML, CSS, JavaScript.</li>
+            <li>Web Development Libraries: ReactJS.</li>
+            <li>Web Development Frameworks: NextJS.</li>
+            <li>Database Management: MongoDB.</li>
+            <li>Version Control: Git.</li>
+            <li>Problem-Solving and Analytical Thinking.</li>
+            <li>Strong Communication and Collaboration Skills.</li>
           </ul>
         </div>
       </section>
