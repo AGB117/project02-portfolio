@@ -30,12 +30,39 @@ function MainNav(props) {
   }, [modalOpen]);
 
   const navHandler = () => {
-    console.log(modalOpen);
     setModalOpen(!modalOpen);
-    console.log(modalOpen);
   };
 
-  console.log(modalOpen);
+  ////////////////////////////
+  ////////Space theme/////////
+  ///////////////////////////
+  const [spaceTheme, setSpaceTheme] = useState(false);
+  const [spaceThemeModal, setSpaceThemeModal] = useState(null);
+  useEffect(() => {
+    spaceTheme ? setSpaceThemeModal("#fff") : setSpaceThemeModal("#333");
+    //send an object here with color and background color for the backdrop and done
+  }, [spaceTheme]);
+
+  const themeHandler = () => {
+    setSpaceTheme(!spaceTheme);
+  };
+  useEffect(() => {
+    if (spaceTheme === true) {
+      document.body.style.fontFamily = "Space Mono, monospace";
+      document.body.style.backgroundImage = "url('space.webp')";
+      document.body.style.color = "#fff";
+    } else {
+      document.body.style.fontFamily = "Georgia, serif";
+      document.body.style.backgroundImage = "url('background.webp')";
+      document.body.style.color = "#333";
+    }
+    console.log(spaceTheme);
+  }, [spaceTheme]);
+
+  ////////////////////////////
+  ////////Space theme/////////
+  ///////////////////////////
+
   return (
     <Fragment>
       <nav className={classes.topBar}>
@@ -43,9 +70,18 @@ function MainNav(props) {
           <div>Abner </div>
 
           <div>Gonzalez</div>
+          <section>
+            <div>
+              <button className={classes.themeChange} onClick={themeHandler}>
+                Change to space theme
+              </button>
+            </div>
+          </section>
         </div>
 
-        {mobileNav && modalOpen && <NavModal closeOpenNav={navHandler} />}
+        {mobileNav && modalOpen && (
+          <NavModal colorModal={spaceThemeModal} closeOpenNav={navHandler} />
+        )}
 
         {!mobileNav && (
           <div className={classes.navLinks}>

@@ -2,6 +2,7 @@ import classes from "./LandingPage.module.css";
 import Card from "../ui/Card";
 import Link from "next/link";
 import { CalendarBlank, MapPin } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
 
 function LandingPage(props) {
   return (

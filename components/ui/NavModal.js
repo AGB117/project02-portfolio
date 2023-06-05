@@ -1,10 +1,14 @@
 import classes from "./NavModal.module.css";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 
-function NavModal({ closeOpenNav }) {
+function NavModal({ closeOpenNav, colorModal }) {
+  console.log(colorModal);
+  useEffect(() => {
+    console.log(colorModal);
+  }, [colorModal]);
   return (
     <Fragment>
-      <div className={classes.modal}>
+      <div style={{ color: `${colorModal}` }} className={classes.modal}>
         <div className={classes.navLinks}>
           <ul>
             <li>
