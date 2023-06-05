@@ -18,10 +18,10 @@ body {
 
   /*image style*/
   background-image: url(/background.webp);
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 
-  /* background-size: 100vw 100vh; */
+  /* background-attachment: fixed; */
   /* position: fixed;
   top: 0;
   left: 0;
