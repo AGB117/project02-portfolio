@@ -17,20 +17,20 @@ body {
   overflow-x: hidden;
 
   /*image style*/
-  /* background-image: url(/background.webp);
+  background-image: url(/background.webp);
   background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-repeat: repeat;
+  background-attachment: fixed;
 
   /* position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh; */
+  height: 100vh;
   background-image: url(/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1000000;
+  z-index: -1000000; */
 }
 
 a {
