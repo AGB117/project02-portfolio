@@ -18,14 +18,14 @@ function LandingPage(props) {
           technologies is through the REACT.js library and the Next.js framework
           to design websites from the ground up. Combining my technical skills,
           analytical mindset, and problem-solving abilities, I am eager to
-          contribute my expertise to a dynamic web development team.
+          contribute to a dynamic web development team.
         </p>
       </section>
 
       <section id="education" className={classes.education}>
         <h2>Education</h2>
         <h1>Bachelor of Science in Chemical Engineering</h1>
-        <p>Mayaguez, PR 2014</p>
+        <p>Universidad de Puerto Rico, Mayaguez Campus 2014</p>
       </section>
 
       <section id="experience" className={classes.experience}>
