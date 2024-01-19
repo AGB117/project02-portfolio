@@ -12,7 +12,7 @@
 
 .landingContainer h2 {
   font-size: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .landingContainer h1 {
@@ -117,10 +117,17 @@
   margin-top: 1rem;
 }
 
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .cardContainer {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 1rem;
+  margin-top: 2rem;
 }
 
 .cardFlexCenter {

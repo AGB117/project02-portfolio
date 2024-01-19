@@ -102,36 +102,70 @@ function LandingPage(props) {
 
       <section id="work" className={classes.work}>
         <h2>Work</h2>
-        <div className={classes.cardContainer}>
-          <div className={classes.cardFlexCenter}>
-            <Card>
-              <div className={classes.workImg}>
-                <img src="project01.webp" />
-              </div>
-              <div className={classes.projectName}>Restaurant Project</div>
-              <div className={classes.linksContainer}>
-                <div>
-                  <a href="https://project01-restaurant.vercel.app/">
-                    <img src="/Vercel-modified.webp" />
-                  </a>
+        <div className={classes.projectsContainer}>
+          <div className={classes.cardContainer}>
+            <div className={classes.cardFlexCenter}>
+              <Card>
+                <div className={classes.workImg}>
+                  <img src="project01.webp" />
+                </div>
+                <div className={classes.projectName}>Restaurant Project</div>
+                <div className={classes.linksContainer}>
                   <div>
                     <a href="https://project01-restaurant.vercel.app/">
-                      Vercel
+                      <img src="/Vercel-modified.webp" />
                     </a>
+                    <div>
+                      <a href="https://project01-restaurant.vercel.app/">
+                        Vercel
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <Link href="https://github.com/AGB117/project01-restaurant">
-                    <img src="/githubcircle-modified.webp" />
-                  </Link>
                   <div>
-                    <a href="https://github.com/AGB117/project01-restaurant">
-                      Github
-                    </a>
+                    <Link href="https://github.com/AGB117/project01-restaurant">
+                      <img src="/githubcircle-modified.webp" />
+                    </Link>
+                    <div>
+                      <a href="https://github.com/AGB117/project01-restaurant">
+                        Github
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </div>
+          </div>{" "}
+          <div className={classes.cardContainer}>
+            <div className={classes.cardFlexCenter}>
+              <Card>
+                <div className={classes.workImg}>
+                  <img src="project03.webp" />
+                </div>
+                <div className={classes.projectName}>Video Game Hoard</div>
+                <div className={classes.linksContainer}>
+                  <div>
+                    <a href="https://project03-videogamehoard.vercel.app/">
+                      <img src="/Vercel-modified.webp" />
+                    </a>
+                    <div>
+                      <a href="https://project03-videogamehoard.vercel.app/">
+                        Vercel
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <Link href="https://github.com/AGB117/project03-videogamehoard">
+                      <img src="/githubcircle-modified.webp" />
+                    </Link>
+                    <div>
+                      <a href="https://github.com/AGB117/project03-videogamehoard">
+                        Github
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
