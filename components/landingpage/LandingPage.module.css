@@ -11,7 +11,7 @@
 }
 
 .landingContainer h2 {
-  font-size: 6rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -185,10 +185,31 @@
   list-style: none;
 }
 
+.contactLinks button {
+  display: flex;
+  align-content: center;
+  height: 5rem;
+  width: 10rem;
+  border-radius: 1rem;
+  background-color: rgba(212, 169, 253, 0.568);
+  border: 1px solid blueviolet;
+}
+
+.contactLinks p {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+}
+.contactLinks a {
+  height: 100%;
+  width: 100%;
+}
+
 .contactLinks a:hover,
 .contactLinks a:active {
   cursor: pointer;
   color: orange;
+  border-radius: 1rem;
+  background-color: blueviolet;
 }
 
 @media (max-width: 1500px) {

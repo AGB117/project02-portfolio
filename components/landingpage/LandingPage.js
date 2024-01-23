@@ -92,8 +92,8 @@ function LandingPage(props) {
             <li>Programming Languages: HTML, CSS, JavaScript.</li>
             <li>Web Development Libraries: ReactJS.</li>
             <li>Web Development Frameworks: NextJS.</li>
-            <li>Database Management: MongoDB.</li>
-            <li>Version Control: Git.</li>
+            <li>Database Management: MongoDB, Supabase.</li>
+            <li>Version Control: GitHub.</li>
             <li>Problem-Solving and Analytical Thinking.</li>
             <li>Strong Communication and Collaboration Skills.</li>
           </ul>
@@ -101,7 +101,7 @@ function LandingPage(props) {
       </section>
 
       <section id="work" className={classes.work}>
-        <h2>Work</h2>
+        <h2>Portfolio Projects</h2>
         <div className={classes.projectsContainer}>
           <div className={classes.cardContainer}>
             <div className={classes.cardFlexCenter}>
@@ -176,10 +176,18 @@ function LandingPage(props) {
           <ul>
             <li>abner.gonzalez4@gmail.com</li>
             <li>
-              <a href="https://www.linkedin.com/in/abner-gonzalez/">LinkedIn</a>
+              <button>
+                <a href="https://www.linkedin.com/in/abner-gonzalez/">
+                  <p>LinkedIn</p>
+                </a>
+              </button>
             </li>
             <li>
-              <a href="https://github.com/AGB117">Github</a>
+              <button>
+                <a href="https://github.com/AGB117">
+                  <p>Github</p>
+                </a>
+              </button>
             </li>
           </ul>
         </div>
