@@ -100,7 +100,7 @@ function LandingPage(props) {
         </div>
       </section>
 
-      <section id="work" className={classes.work}>
+      <section id="Portfolio Projects" className={classes.work}>
         <h2>Portfolio Projects</h2>
         <div className={classes.projectsContainer}>
           <div className={classes.cardContainer}>

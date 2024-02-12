@@ -125,8 +125,8 @@ function MainNav(props) {
                 </a>
               </li>
               <li>
-                <a onClick={navHandler} href="#work">
-                  Work
+                <a onClick={navHandler} href="#Portfolio Projects">
+                Portfolio Projects
                 </a>
               </li>
               <li>

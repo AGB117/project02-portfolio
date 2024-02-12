@@ -37,8 +37,8 @@ function NavModal({ closeOpenNav, colorModal }) {
               </a>
             </li>
             <li>
-              <a onClick={closeOpenNav} href="#work">
-                Work
+              <a onClick={closeOpenNav} href="#Portfolio Projects">
+                Portfolio Projects
               </a>
             </li>
             <li>
