@@ -90,13 +90,13 @@ function LandingPage(props) {
         <h2>Skills</h2>
         <div>
           <ul>
-            <li>Programming Languages: HTML, CSS, JavaScript.</li>
+            <li>Programming Languages: HTML, CSS, JavaScript, TypeScript.</li>
             <li>Web Development Libraries: ReactJS.</li>
             <li>Web Development Frameworks: NextJS.</li>
-            <li>Database Management: MongoDB.</li>
-            <li>Version Control: Git.</li>
+            <li>Database Management: MongoDB, Supabase.</li>
+            <li>Version Control: Git,Github.</li>
             <li>Problem-Solving and Analytical Thinking.</li>
-            <li>Strong Communication and Collaboration Skills.</li>
+            <li>Strong communication and collaboration Skills.</li>
           </ul>
         </div>
       </section>
