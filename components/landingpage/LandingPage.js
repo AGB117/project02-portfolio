@@ -94,7 +94,7 @@ function LandingPage(props) {
             <li>Web Development Libraries: ReactJS.</li>
             <li>Web Development Frameworks: NextJS.</li>
             <li>Database Management: MongoDB, Supabase.</li>
-            <li>Version Control: Git, Github.</li>
+            <li>Version Control: Git,Github.</li>
             <li>Problem-Solving and Analytical Thinking.</li>
             <li>Strong communication and collaboration Skills.</li>
           </ul>
