@@ -2,7 +2,6 @@ import classes from "./LandingPage.module.css";
 import Card from "../ui/Card";
 import Link from "next/link";
 import { CalendarBlank, MapPin } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
 
 function LandingPage(props) {
   return (
@@ -19,14 +18,14 @@ function LandingPage(props) {
           technologies is through the REACT.js library and the Next.js framework
           to design websites from the ground up. Combining my technical skills,
           analytical mindset, and problem-solving abilities, I am eager to
-          contribute my expertise to a dynamic web development team.
+          contribute to a dynamic web development team.
         </p>
       </section>
 
       <section id="education" className={classes.education}>
         <h2>Education</h2>
         <h1>Bachelor of Science in Chemical Engineering</h1>
-        <p>Mayaguez, PR 2014</p>
+        <p>Universidad de Puerto Rico, Mayaguez Campus 2014</p>
       </section>
 
       <section id="experience" className={classes.experience}>
@@ -90,112 +89,84 @@ function LandingPage(props) {
         <h2>Skills</h2>
         <div>
           <ul>
-            <li>Programming Languages: HTML, CSS, JavaScript, TypeScript.</li>
+            <li>Programming Languages: HTML, CSS, JavaScript.</li>
             <li>Web Development Libraries: ReactJS.</li>
             <li>Web Development Frameworks: NextJS.</li>
             <li>Database Management: MongoDB, Supabase.</li>
-            <li>Version Control: Git,Github.</li>
+            <li>Version Control: GitHub.</li>
             <li>Problem-Solving and Analytical Thinking.</li>
-            <li>Strong communication and collaboration Skills.</li>
+            <li>Strong Communication and Collaboration Skills.</li>
           </ul>
         </div>
       </section>
 
-      <section id="work" className={classes.work}>
-        <h2>Work</h2>
-        <div className={classes.cardContainer}>
-          <div className={classes.cardFlexCenter}>
-            <Card>
-              <div className={classes.workImg}>
-                <img src="project01.webp" />
-              </div>
-              <div className={classes.projectName}>Restaurant Project</div>
-              <div className={classes.linksContainer}>
-                <div>
-                  <a href="https://project01-restaurant.vercel.app/">
-                    <img src="/Vercel-modified.webp" />
-                  </a>
+      <section id="Portfolio Projects" className={classes.work}>
+        <h2>Portfolio Projects</h2>
+        <div className={classes.projectsContainer}>
+          <div className={classes.cardContainer}>
+            <div className={classes.cardFlexCenter}>
+              <Card>
+                <div className={classes.workImg}>
+                  <img src="project01.webp" />
+                </div>
+                <div className={classes.projectName}>Restaurant Project</div>
+                <div className={classes.linksContainer}>
                   <div>
                     <a href="https://project01-restaurant.vercel.app/">
-                      Vercel
+                      <img src="/Vercel-modified.webp" />
                     </a>
+                    <div>
+                      <a href="https://project01-restaurant.vercel.app/">
+                        Vercel
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <Link href="https://github.com/AGB117/project01-restaurant">
-                    <img src="/githubcircle-modified.webp" />
-                  </Link>
                   <div>
-                    <a href="https://github.com/AGB117/project01-restaurant">
-                      Github
-                    </a>
+                    <Link href="https://github.com/AGB117/project01-restaurant">
+                      <img src="/githubcircle-modified.webp" />
+                    </Link>
+                    <div>
+                      <a href="https://github.com/AGB117/project01-restaurant">
+                        Github
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </div>
+          </div>{" "}
+          <div className={classes.cardContainer}>
+            <div className={classes.cardFlexCenter}>
+              <Card>
+                <div className={classes.workImg}>
+                  <img src="project03.webp" />
+                </div>
+                <div className={classes.projectName}>Video Game Hoard</div>
+                <div className={classes.linksContainer}>
+                  <div>
+                    <a href="https://project03-videogamehoard.vercel.app/">
+                      <img src="/Vercel-modified.webp" />
+                    </a>
+                    <div>
+                      <a href="https://project03-videogamehoard.vercel.app/">
+                        Vercel
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <Link href="https://github.com/AGB117/project03-videogamehoard">
+                      <img src="/githubcircle-modified.webp" />
+                    </Link>
+                    <div>
+                      <a href="https://github.com/AGB117/project03-videogamehoard">
+                        Github
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
-
-          {/* <div className={classes.cardFlexCenter}>
-            <Card>
-              <div className={classes.workImg}>
-                <img src="project01.webp" />
-              </div>
-              <div className={classes.projectName}>Restaurant Project</div>
-              <div className={classes.linksContainer}>
-                <div>
-                  <a href="https://project01-restaurant.vercel.app/">
-                    <img src="/Vercel-modified.webp" />
-                  </a>
-                  <div>
-                    <a href="https://project01-restaurant.vercel.app/">
-                      Vercel
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <Link href="https://github.com/AGB117/project01-restaurant">
-                    <img src="/githubcircle-modified.webp" />
-                  </Link>
-                  <div>
-                    <a href="https://github.com/AGB117/project01-restaurant">
-                      Github
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
-
-          <div className={classes.cardFlexCenter}>
-            <Card>
-              <div className={classes.workImg}>
-                <img src="project01.webp" />
-              </div>
-              <div className={classes.projectName}>Restaurant Project</div>
-              <div className={classes.linksContainer}>
-                <div>
-                  <a href="https://project01-restaurant.vercel.app/">
-                    <img src="/Vercel-modified.webp" />
-                  </a>
-                  <div>
-                    <a href="https://project01-restaurant.vercel.app/">
-                      Vercel
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <Link href="https://github.com/AGB117/project01-restaurant">
-                    <img src="/githubcircle-modified.webp" />
-                  </Link>
-                  <div>
-                    <a href="https://github.com/AGB117/project01-restaurant">
-                      Github
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div> */}
         </div>
       </section>
 
@@ -205,10 +176,18 @@ function LandingPage(props) {
           <ul>
             <li>abner.gonzalez4@gmail.com</li>
             <li>
-              <a href="https://www.linkedin.com/in/abner-gonzalez/">LinkedIn</a>
+              <button>
+                <a href="https://www.linkedin.com/in/abner-gonzalez/">
+                  <p>LinkedIn</p>
+                </a>
+              </button>
             </li>
             <li>
-              <a href="https://github.com/AGB117">Github</a>
+              <button>
+                <a href="https://github.com/AGB117">
+                  <p>Github</p>
+                </a>
+              </button>
             </li>
           </ul>
         </div>
