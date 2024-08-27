@@ -49,38 +49,48 @@ function LandingPage(props) {
         <div>
           <ul>
             <li>
-              Analyze a variety of samples using analytical lab instruments.
+              Analysis of samples (liquid and solid) using analytical lab
+              instruments producing accurate and reliable results for clients
+              99% of the time.
             </li>
 
             <li>
-              Design, set up and conduct tests for various lab scale research
-              projects.
-            </li>
-            <li> Help implement lab scale projects to industry scale. </li>
-            <li>
-              Operation of mineral processing equipment (jaw crusher, Bico-Braun
-              ball or rod mill, wet & dry sieve screening) to prepare materials
-              for accurate analysis in the wet chemistry lab.
-            </li>
-            <li> Perform phosphate flotation for reagent testing purposes. </li>
-            <li>
-              Operation and troubleshooting of analytical laboratory equipment
-              including Flow Injection Analysis (Ion Chromatography), ICP-OES
-              (optical emission spectrometry) to obtain quantitative properties
-              of various materials (solid and liquid) and Particle Size Analyzer
-              for dry and slurry samples. Mostly for REE (rare earths) and
-              phosphate concentrations.
+              Designed, set up and conducted tests for lab scale research
+              projects resulting in accurate data generation and increasing
+              current projects by 50%.
             </li>
             <li>
-              Perform testing of samples using a variety of analytical chemistry
-              techniques (titration, pH adjustments, fluoride concentration in
-              soil, silica concentration, citrate insoluble etc.)
+              {" "}
+              Headed the implementation of lab scale projects to industry scale
+              driving a 20% increase in service demand by implementing
+              streamlined processes.{" "}
             </li>
             <li>
-              Author various laboratory SOPs (sample preparation, standard
-              formulation etc.)
+              Authored laboratory SOPs (sample preparation, standard
+              formulation) resulting in a streamlined and straightforward
+              laboratory work flow and increasing efficiency of the lab by 30%.
             </li>
-            <li>Train personnel in a variety of lab SOPs. </li>
+            <li>
+              {" "}
+              Trained personnel and coached students in lab SOPs to ensure
+              continuous operation of the chemistry laboratory resulting in an
+              increased output speed of 50%.
+            </li>
+            <li>
+              Operated and troubleshooted analytical laboratory equipment to
+              ensure accurate analysis of the sampling process, mostly for REE
+              (rare earths) and phosphate concentrations resulting in an uptime
+              of 95%.
+            </li>
+            <li>
+              Learned new analysis equipment within the laboratory to increase
+              available laboratory services by 30%.
+            </li>
+            <li>
+              Learned new roles at the university to increase knowledge base and
+              avoid downtime resulting in delivering quality results 95% of the
+              time in a timely manner.
+            </li>
           </ul>
         </div>
       </section>
@@ -89,7 +99,9 @@ function LandingPage(props) {
         <h2>Skills</h2>
         <div>
           <ul>
-            <li>Programming Languages: HTML, CSS, JavaScript.</li>
+            <li>
+              Programming Languages: HTML, CSS, JavaScript and TypeScript.
+            </li>
             <li>Web Development Libraries: ReactJS.</li>
             <li>Web Development Frameworks: NextJS.</li>
             <li>Database Management: MongoDB, Supabase.</li>
@@ -134,7 +146,7 @@ function LandingPage(props) {
                 </div>
               </Card>
             </div>
-          </div>{" "}
+          </div>
           <div className={classes.cardContainer}>
             <div className={classes.cardFlexCenter}>
               <Card>
